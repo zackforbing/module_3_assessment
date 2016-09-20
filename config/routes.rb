@@ -8,9 +8,7 @@ Rails.application.routes.draw do
 # API Namespaces
   namespace :api, defaults: { format: :json } do
     namespace :v1 do
-      namespace :items do
-        get '/', to: 'items#index'
-      end
+      get '/items', to: 'items#index'
     end
   end
 end

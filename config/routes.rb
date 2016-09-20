@@ -8,8 +8,7 @@ Rails.application.routes.draw do
 # API Namespaces
   namespace :api, defaults: { format: :json } do
     namespace :v1 do
-      get '/items', to: 'items#index'
-      get '/items/:id', to: 'items#show'
+      resources :items, only: [:index, :show]
     end
   end
 end

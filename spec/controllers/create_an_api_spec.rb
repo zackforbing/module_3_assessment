@@ -1,6 +1,6 @@
 require 'rails_helper'
 
-describe 'creating an api' do
+describe 'Api::V1::ItemsController' do
   scenario 'user story 1' do
     # When I send a GET request to `/api/v1/items`
     get '/api/v1/items'

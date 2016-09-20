@@ -7,7 +7,9 @@ describe Api::V1::ItemsController do
     # I receive a 200 JSON response containing all items
     expect :success
     # And each item has an id, name, description, and image_url but not the created_at or updated_at
+    require "pry"; binding.pry
     items = JSON.parse(response.body)
+    expect(items.first).to eq()
 
   end
 
